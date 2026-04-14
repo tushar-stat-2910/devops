@@ -1,3 +1,2 @@
-print("Installing dependencies")
 numpy
 pandas
