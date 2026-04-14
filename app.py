@@ -1,1 +1,1 @@
-first devops git activity 
+print("First DevOps GitHub Actions activity")
