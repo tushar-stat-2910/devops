@@ -3,6 +3,6 @@ print("First DevOps GitHub Actions activity")
 #     return a + b
 
 def add(a, b):
-    return a - b
+    return a + b
 
 print(add(2, 3))
