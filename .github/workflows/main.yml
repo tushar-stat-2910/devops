@@ -34,5 +34,7 @@ jobs:
     needs: test
 
     steps:
-      - name: Fake Deploy
-        run: echo "Deploying application..."
+      - name: Use Secret
+        run: echo "Hello $MY_NAME"
+        env:
+          MY_NAME: ${{ secrets.MY_NAME }}
