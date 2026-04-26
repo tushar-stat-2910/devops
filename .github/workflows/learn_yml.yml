@@ -3,7 +3,7 @@ name: learn_yml_file_writing
 on:
   push:
     paths: 
-      - "learn_yml.yml"
+      - ".github/workflows/learn_yml.yml"
       
 jobs:
   demo:
