@@ -21,5 +21,19 @@ jobs:
 
       - name: step 3 (using local variables)
         run: echo "Hey defined and use local variable. local variable is $MY_LOCAL_ENV_VAR"
+
+      - name: step 4.1 Use of conditional statements (if)            
+        if: github.ref == 'refs/heads/main'
+        run: echo "using if for running pipeline only if pished in main branch"
+      - name: step 4.2
+        if: success()
+        run: echo "if previous step is succed then run this step achived by success()"
+      - name: step 4.3
+        if: failure() 
+        run: echo "if previous step is fails then run this step achived by failure()"
+      - name: step 4.4
+        if: always()
+        run: echo "always run this step achieved by always()"
+             echo "covered if, need to learn if we can add this substeps of 4 into step 4"
         
   
