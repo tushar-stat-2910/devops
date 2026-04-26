@@ -8,11 +8,18 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-latest
+
+    env:
+      MY_LOCAL_ENV_VAR: LOCAL_ENV_VAR
+      
     steps:
       - name: step 1
         run: echo "hello"
 
       - name: step 2
         run : echo "Learning YAML"
+
+      - name: step 3 (using local variables)
+        run: echo "Hey defined and use local variable. local variable is $MY_LOCAL_ENV_VAR"
         
   
