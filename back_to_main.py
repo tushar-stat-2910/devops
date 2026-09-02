@@ -29,3 +29,5 @@ print('learned the concept of branching and merging',
 
 
 'hi lets try avoiding merge conflicts'
+
+'HI adding something in detach branch'
