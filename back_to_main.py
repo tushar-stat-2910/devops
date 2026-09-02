@@ -26,3 +26,6 @@ print('learned the concept of branching and merging',
 * fa2c985 second commit - created credentials file
 * 789ffba first commit
 '''
+
+
+'hi lets try avoiding merge conflicts'
